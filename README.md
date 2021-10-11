@@ -1,2 +1,2 @@
 # Portfolio
-Автотеста Selenium IDE
+Автотесты Selenium IDE
