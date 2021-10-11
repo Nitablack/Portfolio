@@ -1,0 +1,147 @@
+{
+  "id": "eafa5b53-95d7-4477-bbd5-3a4af094618b",
+  "version": "2.0",
+  "name": "puzzle-english",
+  "url": "https://puzzle-english.com",
+  "tests": [{
+    "id": "43b4b647-898c-4158-a3fb-836096b2f523",
+    "name": "Songs",
+    "commands": [{
+      "id": "ebf61694-7e87-47e1-8049-7d6e0109c54d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "427484e1-907c-4e59-aab7-99dcb66415c5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98f63e2b-43d2-45b6-9888-b6d898b72108",
+      "comment": "",
+      "command": "click",
+      "target": "css=.puzzle_mr_25 path",
+      "targets": [
+        ["css=.puzzle_mr_25 path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7c4758f-8a6c-41b3-bc47-6bec8ebd260c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.redesign-header__upd-menu-item:nth-child(8) .redesign-header__upd-submenu-item:nth-child(3) > .redesign-header__submenu-title",
+      "targets": [
+        ["css=.redesign-header__upd-menu-item:nth-child(8) .redesign-header__upd-submenu-item:nth-child(3) > .redesign-header__submenu-title", "css:finder"],
+        ["xpath=//li[8]/div/a[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac457716-3771-463c-9408-13bcb91dd1e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.puzzle-search__input",
+      "targets": [
+        ["css=.puzzle-search__input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='rjs-music-catalog']/div/section[2]/div/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0ed9ee5-c9bc-4fbe-aab9-6c3f266db1c8",
+      "comment": "",
+      "command": "type",
+      "target": "css=.puzzle-search__input",
+      "targets": [
+        ["css=.puzzle-search__input", "css:finder"],
+        ["xpath=//input[@value='ray of light']", "xpath:attributes"],
+        ["xpath=//div[@id='rjs-music-catalog']/div/section[2]/div/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "ray of light"
+    }, {
+      "id": "61268729-e753-4a99-b638-af545b8a1c2e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.puzzle-search__input",
+      "targets": [
+        ["css=.puzzle-search__input", "css:finder"],
+        ["xpath=//input[@value='ray of light']", "xpath:attributes"],
+        ["xpath=//div[@id='rjs-music-catalog']/div/section[2]/div/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "fe3ddd64-004c-4983-8d2a-e4c32d952b97",
+      "comment": "",
+      "command": "click",
+      "target": "css=.puzzle-movies__search-popup-list-title > strong",
+      "targets": [
+        ["css=.puzzle-movies__search-popup-list-title > strong", "css:finder"],
+        ["xpath=//div[@id='rjs-music-catalog']/div/section[2]/div/div/div[2]/div/div/div/div/div/div/a/div/div[2]/div/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Ray of Light')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a090574-76f1-46c0-aa76-9a2dbd5dec36",
+      "comment": "",
+      "command": "click",
+      "target": "css=.puzzle_mr_5:nth-child(2)",
+      "targets": [
+        ["css=.puzzle_mr_5:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='rjs-music']/div/div/div/div[3]/div/div/div/div[2]/div/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'YouTube видео')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8e7191e-73f0-428f-8cc9-b38547860d95",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "4806861b-f81b-42c3-89d9-7b1903180395",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-error-content-wrap-reason > span",
+      "targets": [
+        ["css=.ytp-error-content-wrap-reason > span", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[14]/div/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Это видео недоступно.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5cf93a8-438e-4a9f-aa75-17c5816174e4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ytp-error-content-wrap-reason > span",
+      "targets": [
+        ["css=.ytp-error-content-wrap-reason > span", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[14]/div/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Это видео недоступно.')]", "xpath:innerText"]
+      ],
+      "value": "Это видео недоступно."
+    }]
+  }],
+  "suites": [{
+    "id": "c05396fa-0f61-449e-8677-ab0e6005a573",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["43b4b647-898c-4158-a3fb-836096b2f523"]
+  }],
+  "urls": ["https://puzzle-english.com/"],
+  "plugins": []
+}
